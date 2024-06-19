@@ -1,0 +1,42 @@
+{
+  "name": "worduels",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "start": "ts-node ./index.ts",
+    "migrate:latest": "ts-node ./db/migration/migrateLatest.ts",
+    "migrate:down": "ts-node ./db/migration/migrateDown.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidsochill/worduels.git"
+  },
+  "author": "David Stilz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidsochill/worduels/issues"
+  },
+  "homepage": "https://github.com/davidsochill/worduels#readme",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "~5.1.1",
+    "cors": "~2.8.5",
+    "crypto": "~1.0.1",
+    "dotenv": "~16.4.5",
+    "express": "~4.19.2",
+    "fs": "~0.0.1-security",
+    "kysely": "~0.27.3",
+    "path": "~0.12.7",
+    "pg": "~8.12.0",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "~5.0.2",
+    "@types/express": "~4.17.21",
+    "@types/node": "~20.14.6",
+    "@types/pg": "~8.11.6",
+    "ts-node-dev": "~2.0.0",
+    "typescript": "~5.4.5"
+  }
+}
