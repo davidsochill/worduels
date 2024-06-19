@@ -1,4 +1,5 @@
 import {
+  ColumnType,
     Generated,
     Insertable,
     Selectable,
@@ -6,9 +7,9 @@ import {
 
 export interface UserTable {
   id: Generated<number>
-  username: string
+  username: string,
   password: string
 }
 
-export type Person = Selectable<UserTable>
-export type NewPerson = Insertable<UserTable>
+export type SelectUser = Selectable<UserTable>
+export type NewUser = Insertable<UserTable>
