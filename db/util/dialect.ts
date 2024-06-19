@@ -10,7 +10,7 @@ export const dialect = new PostgresDialect({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
-    port: parseInt(process.env.DB_PORT as string), // Default port 5432 if not specified
-    max: parseInt(process.env.DB_POOL_MAX as string), // Default max pool size of 10 if not specified
+    port: parseInt(process.env.DB_PORT as string),
+    max: parseInt(process.env.DB_POOL_MAX as string),
   })
 });
