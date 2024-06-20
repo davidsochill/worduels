@@ -1,9 +1,8 @@
 import {
-  ColumnType,
-    Generated,
-    Insertable,
-    Selectable,
-  } from 'kysely'
+  Generated,
+  Insertable,
+  Selectable,
+} from 'kysely'
 
 export interface UserTable {
   id: Generated<number>
